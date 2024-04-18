@@ -1837,7 +1837,7 @@ class AI {
         type: AIFormatType.VARIABLE_LENGTH_WITH_ISO_CHARS,
         dataTitle: 'ORDER NUMBER',
         description: 'Customer’s purchase order number',
-        regExpString: '^400(\\d{3})($_ALLOW_CHAR{0,30})\$'),
+        regExpString: '^400($_ALLOW_CHAR{0,30})\$'),
     '421': const AI(
         code: '421',
         type: AIFormatType.VARIABLE_LENGTH_WITH_ISO_CHARS,
