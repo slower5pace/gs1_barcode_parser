@@ -1832,6 +1832,12 @@ class AI {
         description:
             'Applicable amount payable with ISO currency code (variable measure trade item)',
         regExpString: r'^3933(\d{3})(\d{0,15})$'),
+    '400': const AI(
+        code: '400',
+        type: AIFormatType.VARIABLE_LENGTH_WITH_ISO_CHARS,
+        dataTitle: 'ORDER NUMBER',
+        description: 'Customer’s purchase order number',
+        regExpString: '^400(\\d{3})($_ALLOW_CHAR{0,30})\$'),
     '421': const AI(
         code: '421',
         type: AIFormatType.VARIABLE_LENGTH_WITH_ISO_CHARS,
